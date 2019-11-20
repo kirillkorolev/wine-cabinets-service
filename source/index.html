@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ремонт и обслуживание винных шкафов и винотек</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff1" as="font">
+  <script src="./js/plugins/picturefill.min.js" async></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo-link">
+        <div class="page-header__title">Сервисный центр 24 часа</div>
+        <div class="page-header__title-info">Ремонт и обслуживание винных шкафов</div>
+      </a>
+      <div class="page-header__menu-wrapper">
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Услуги</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Акции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Прайс-лист</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__call-block">
+          <a class="page-header__phone-number" href="tel:+78123456790">8 (812) 345 67 90</a>
+          <a class="page-header__call-order" href="#">Заказать звонок</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Сайт сервисного центра по ремонту и обслуживанию винных шкафов и винотек</h1>
+    <section class="promotion">
+      <div class="promotion__wrapper">
+        <h2 class="promotion__title">
+          <span class="promotion__title-first-part">Ремонт и обслуживание</span>
+          <span class="promotion__title-second-part">Винных шкафов и винотек</span>
+        </h2>
+        <div class="promotion__text">Мы работаем круглосуточно. По всей Москве и Московской области.</div>
+        <div class="promotion__text">Доверьте свою технику профессионалам!</div>
+        <button class="promotion__button" type="button">Вызвать мастера</button>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title">Почему мы?</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__guarantee-icon">
+              <svg width="46" height="52">
+                <use xlink:href="#icon-guarantee"></use>
+              </svg>
+            </div>
+            <div class="advantages__guarantee-text">
+              <h3 class="advantages__guarantee-title">Гарантия на работу</h3>
+              <p class="advantages__text">Мы гарантируем качество предоставляемых услуг в течении 6-12 месяцев (зависит от типа и состояния ремонтируемой техники).</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__guarantee-icon">
+              <svg width="48" height="48">
+                <use xlink:href="#icon-repair"></use>
+              </svg>
+            </div>
+            <div class="advantages__guarantee-text">
+              <h3 class="advantages__guarantee-title">Гарантия на запасные части</h3>
+              <p class="advantages__text">Используем оригинальные запасные части от завода-изготовителя. Гарантируем подлинность и бесперебойную работу в течении 6-12 месяцев.</p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__guarantee-icon">
+              <svg width="12" height="19">
+                <use xlink:href="#icon-price"></use>
+              </svg>
+            </div>
+            <div class="advantages__guarantee-text">
+              <h3 class="advantages__guarantee-title">Гарантия цены</h3>
+              <p class="advantages__text">Не меняем цены в процессе. Сообщаем точную стоимость сразу после диагностики оборудования. Никаких дополнительных сборов!</p>
+            </div>
+          </li>
+        </ul>
+        <div class="advantages__form">
+          <h3 class="advantages__form-title">Хотите узнать причину поломки?</h3>
+          <div class="advantages__form-slogan">Закажите бесплатную диагностику!</div>
+          <form class="form-call-order">
+            <fieldset class="form-call-order__item">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="form-call-order__input" id="name" type="text" placeholder="Имя" minlength="3" required>
+            </fieldset>
+            <fieldset class="form-call-order__item">
+              <label class="visually-hidden" for="phone">Телефонный номер</label>
+              <input class="form-call-order__input" id="phone" type="tel" placeholder="Телефонный номер" minlength="7" required>
+            </fieldset>
+            <fieldset class="form-call-order__item">
+              <textarea id="form-call-order__text" name="message-text" rows="3" placeholder="Сообщение"></textarea>
+            </fieldset>
+            <button class="form-call-order__button" type="submit">Заказать диагностику</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="price-list">
+      <h2 class="price-list__title">Основные неисправности и стоимость работ</h2>
+      <table>
+
+      </table>
+      <button class="price-list__button" type="button">Вызвать мастера</button>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы наших клиентов</h2>
+
+    </section>
+    <section class="partners">
+      <h2 class="partners__title">Бренды с которыми работаем</h2>
+      <ul class="partners__list">
+        <li class="parteners__item">
+
+
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>

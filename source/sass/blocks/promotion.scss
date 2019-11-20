@@ -1,0 +1,78 @@
+.promotion__title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.promotion {
+  color: $white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-repeat: no-repeat;
+  background-image: url('../img/backgrounds/promotion-bg@1x.jpg');
+  background-size: cover;
+  background-position: center 0;
+  margin-bottom: 44px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/backgrounds/promotion-bg@2x.jpg");
+  }
+}
+
+.promotion__wrapper {
+  padding: 183px 0 111px;
+}
+
+.promotion__title-first-part {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  margin-bottom: 17px;
+}
+
+.promotion__title-second-part {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.08em;
+  margin-bottom: 17px;
+}
+
+.promotion__title {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.promotion__button {
+  display: inline-block;
+  vertical-align: top;
+  width: 165px;
+  color: $white;
+  border: 2px solid $white;
+  padding: 13px 0 11px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  outline: none;
+}
+
+.promotion__button:hover {
+  color: $red;
+  border-color: $red;
+}
+
+.promotion__button:active {
+  opacity: 0.7;
+}
+
+.promotion__text {
+  margin: 0;
+  letter-spacing: 0.05em
+}
+
+.promotion__text:nth-of-type(2) {
+  margin-bottom: 42px;
+}
