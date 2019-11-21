@@ -67,70 +67,136 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__container">
         <h2 class="advantages__title">Почему мы?</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <div class="advantages__guarantee-icon">
-              <svg width="46" height="52">
-                <use xlink:href="#icon-guarantee"></use>
-              </svg>
-            </div>
-            <div class="advantages__guarantee-text">
-              <h3 class="advantages__guarantee-title">Гарантия на работу</h3>
-              <p class="advantages__text">Мы гарантируем качество предоставляемых услуг в течении 6-12 месяцев (зависит от типа и состояния ремонтируемой техники).</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__guarantee-icon">
-              <svg width="48" height="48">
-                <use xlink:href="#icon-repair"></use>
-              </svg>
-            </div>
-            <div class="advantages__guarantee-text">
-              <h3 class="advantages__guarantee-title">Гарантия на запасные части</h3>
-              <p class="advantages__text">Используем оригинальные запасные части от завода-изготовителя. Гарантируем подлинность и бесперебойную работу в течении 6-12 месяцев.</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__guarantee-icon">
-              <svg width="12" height="19">
-                <use xlink:href="#icon-price"></use>
-              </svg>
-            </div>
-            <div class="advantages__guarantee-text">
-              <h3 class="advantages__guarantee-title">Гарантия цены</h3>
-              <p class="advantages__text">Не меняем цены в процессе. Сообщаем точную стоимость сразу после диагностики оборудования. Никаких дополнительных сборов!</p>
-            </div>
-          </li>
-        </ul>
-        <div class="advantages__form">
-          <h3 class="advantages__form-title">Хотите узнать причину поломки?</h3>
-          <div class="advantages__form-slogan">Закажите бесплатную диагностику!</div>
-          <form class="form-call-order">
-            <fieldset class="form-call-order__item">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input class="form-call-order__input" id="name" type="text" placeholder="Имя" minlength="3" required>
-            </fieldset>
-            <fieldset class="form-call-order__item">
-              <label class="visually-hidden" for="phone">Телефонный номер</label>
-              <input class="form-call-order__input" id="phone" type="tel" placeholder="Телефонный номер" minlength="7" required>
-            </fieldset>
-            <fieldset class="form-call-order__item">
-              <textarea id="form-call-order__text" name="message-text" rows="3" placeholder="Сообщение"></textarea>
-            </fieldset>
-            <button class="form-call-order__button" type="submit">Заказать диагностику</button>
-          </form>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__guarantee-icon">
+                <svg width="46" height="52">
+                  <use xlink:href="#icon-guarantee"></use>
+                </svg>
+              </div>
+              <div class="advantages__guarantee-text">
+                <h3 class="advantages__guarantee-title">Гарантия на работу</h3>
+                <p class="advantages__text">Мы гарантируем качество предоставляемых услуг в течении 6-12 месяцев (зависит от типа и состояния ремонтируемой техники).</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__guarantee-icon">
+                <svg width="48" height="48">
+                  <use xlink:href="#icon-repair"></use>
+                </svg>
+              </div>
+              <div class="advantages__guarantee-text">
+                <h3 class="advantages__guarantee-title">Гарантия на запасные части</h3>
+                <p class="advantages__text">Используем оригинальные запасные части от завода-изготовителя. Гарантируем подлинность и бесперебойную работу в течении 6-12 месяцев.</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__guarantee-icon">
+                <svg width="12" height="19">
+                  <use xlink:href="#icon-price"></use>
+                </svg>
+              </div>
+              <div class="advantages__guarantee-text">
+                <h3 class="advantages__guarantee-title">Гарантия цены</h3>
+                <p class="advantages__text">Не меняем цены в процессе. Сообщаем точную стоимость сразу после диагностики оборудования. Никаких дополнительных сборов!</p>
+              </div>
+            </li>
+          </ul>
+          <div class="advantages__form">
+            <h3 class="advantages__form-title">Хотите узнать причину поломки?</h3>
+            <div class="advantages__form-slogan">Закажите бесплатную диагностику!</div>
+            <form class="form-call-order">
+              <fieldset class="form-call-order__item">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input class="form-call-order__input" id="name" type="text" placeholder="Имя" minlength="3" required>
+              </fieldset>
+              <fieldset class="form-call-order__item">
+                <label class="visually-hidden" for="phone">Телефонный номер</label>
+                <input class="form-call-order__input" id="phone" type="tel" placeholder="Телефонный номер" minlength="7" required>
+              </fieldset>
+              <fieldset class="form-call-order__item">
+                <textarea id="form-call-order__text" name="message-text" rows="3" placeholder="Сообщение"></textarea>
+              </fieldset>
+              <button class="form-call-order__button" type="submit">Заказать диагностику</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
     <section class="price-list">
       <h2 class="price-list__title">Основные неисправности и стоимость работ</h2>
-      <table>
+      <div class="price-list__wrapper">
+        <table class="price-list__table">
+          <tbody>
+            <tr>
+              <th class="price-list__breakage-type">Неисправность холодильника</th>
+              <th class="price-list__ammount">Стоимость ремонта</th>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Выезд мастера на объект</td>
+              <td class="price-list__price">0 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Диагностика холодильника при последующем ремонте</td>
+              <td class="price-list__price">0 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Стоимость выезда мастера за пределы КАД</td>
+              <td class="price-list__price">от 150 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Стоимость вызова мастера и диагностика холодильника</td>
+              <td class="price-list__price">500 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Засор слива воды в холодильнике</td>
+              <td class="price-list__price">от 1150 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Устранение утечки хладагента</td>
+              <td class="price-list__price">от 1600 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Заправка холодильника фреоном</td>
+              <td class="price-list__price">от 2500 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Устранение засора капилярной трубки или ее замена</td>
+              <td class="price-list__price">от 1700 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Установка или ремонт испарителя</td>
+              <td class="price-list__price">от 0 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Выезд мастера на объект</td>
+              <td class="price-list__price">от 3200 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Замена сенсорных датчиков</td>
+              <td class="price-list__price">от 3800 руб.</td>
+            </tr>
+            <tr>
+              <td class="price-list__work-type">Ремонт электронных плат</td>
+              <td class="price-list__price">от 2250 руб.</td>
+            </tr>
+              <tr>
+              <td class="price-list__work-type">Замена вентилятора</td>
+              <td class="price-list__price">от 1200 руб.</td>
+            </tr>
 
-      </table>
-      <button class="price-list__button" type="button">Вызвать мастера</button>
+          </tbody>
+
+        </table>
+        <button class="price-list__button" type="button">Вызвать мастера</button>
+      </div>
+
+
     </section>
+
     <section class="reviews">
       <h2 class="reviews__title">Отзывы наших клиентов</h2>
 
@@ -139,12 +205,56 @@
       <h2 class="partners__title">Бренды с которыми работаем</h2>
       <ul class="partners__list">
         <li class="parteners__item">
-
-
+          <a class="partners__link">
+            <img class="partners__logo" src="./img/" width="147" heigth="105" alt="логотип фирмы партнера">
+          </a>
         </li>
       </ul>
     </section>
+    <section class="form">
+      <h2 class="form__title">Оставьте заявку и мы вам перезвоним!</h2>
+      <form>
+
+      </form>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <picture>
+          <img class="map__image" src="#" alt="расположение на карте">
+      </picture>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div class="contacts__wrapper">
+        <div class="contacts__item contacts__item--phone">
+          <b class="contacts__label">Телефон</b>
+          <a class="contacts__phone" href="tel:+78124567835">8 (812) 456 78 35</a>
+        </div>
+        <div class="contacts__item contacts__item--address">
+          <b class="contacts__label">Адрес</b>
+          <address class="contacts__address">г.Москва, ул.Новоизмайловская 8, оф.34</address>
+        </div>
+        <div class="contacts__item contacts__item--mail">
+          <b class="contacts__label">E-mail</b>
+          <a class="contacts__mail" href="mailto:info@winecooler.ru">info@winecooler.ru</a>
+        </div>
+        <div class="contacts__item contacts__item--working-time">
+          <b class="contacts__label">Время работы</b>
+          <div class="contacts__time">Без выходных. С 8.00 и до последнего клиента</div>
+        </div>
+      </div>
+
+    </section>
 
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__wraper">
+      <div class="page-footer__copyrights">Сервисный центр по ремонту винных шкафов. 2019 г</div>
+      <div class="page-footer__developer">
+        <span>Создание сайта - </span>
+        <a class="page-footer__link" href="https://trendspb.ru/">Trendspb</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

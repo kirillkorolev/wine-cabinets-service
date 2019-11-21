@@ -1,5 +1,8 @@
 .advantages__list {
   @include reset-list;
+
+  max-width: 749px;
+  width: auto;
 }
 
 .advantages__title {
@@ -40,8 +43,6 @@
 
 .advantages__item {
   display: flex;
-  max-width: 749px;
-  width: auto;
 }
 
 .advantages__item:not(:last-child) {
@@ -54,10 +55,8 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   padding: 42px 35px 47px 32px;
-  position: absolute;
-  top: -107px;
-  right: -0.27%;
   background-color: $white;
+  margin-top: -150px;
 }
 
 .advantages__form-title,
@@ -80,8 +79,12 @@
 }
 
 .advantages__wrapper {
-  max-width: 1110px;
+  display: flex;
+}
+
+.advantages__container {
+  max-width: 1130px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  padding: 0 10px;
 }
