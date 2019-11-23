@@ -1,15 +1,23 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+(function () {
+  var accordionToggles = document.querySelectorAll(
+      '.js-questions-accordion-toggle'
+  );
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+  var changeAccordionHeight = function (button) {
+    button.addEventListener('click', function () {
+      button.classList.toggle('questions__button--active');
+      var panels = button.nextElementSibling;
+      if (panels.style.maxHeight) {
+        panels.style.maxHeight = null;
+      } else {
+        panels.style.maxHeight = panels.scrollHeight + 'px';
+      }
+    });
+  };
+
+  accordionToggles.forEach(function (toggle) {
+    changeAccordionHeight(toggle);
+  });
+})();

@@ -50,3 +50,15 @@
   letter-spacing: 0.05em;
   font-style: normal;
 }
+
+.contacts__phone:hover,
+.contacts__mail:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: $red-hover;
+}
+
+.contacts__phone:active,
+.contacts__mail:active {
+  text-shadow: none;
+  opacity: 0.7;
+}

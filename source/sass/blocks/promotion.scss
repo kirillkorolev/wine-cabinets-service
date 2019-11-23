@@ -1,6 +1,9 @@
 .promotion__title {
   margin: 0;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
 }
 
 .promotion {
@@ -8,7 +11,7 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.45);
   background-repeat: no-repeat;
-  background-image: url('../img/backgrounds/promotion-bg@1x.jpg');
+  background-image: url("../img/backgrounds/promotion-bg@1x.jpg");
   background-size: cover;
   background-position: center 0;
   margin-bottom: 44px;
@@ -33,12 +36,6 @@
   line-height: 56px;
   letter-spacing: 0.08em;
   margin-bottom: 17px;
-}
-
-.promotion__title {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
 }
 
 .promotion__button {
@@ -70,7 +67,7 @@
 
 .promotion__text {
   margin: 0;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
 }
 
 .promotion__text:nth-of-type(2) {
