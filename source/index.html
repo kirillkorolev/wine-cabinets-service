@@ -10,6 +10,8 @@
   <link rel="preload" href="fonts/roboto-condensed-regular.woff" as="font">
   <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font">
   <link rel="preload" href="fonts/roboto-condensed-bold.woff" as="font">
+  <link rel="preload" href="fonts/roboto-black.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-black.woff" as="font">
   <script src="./js/plugins/picturefill.min.js" async></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,13 +19,16 @@
   <div style="display: none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
-  <header class="page-header">
+  <header class="page-header page-header--menu-closed ">
     <div class="page-header__wrapper">
-      <a class="page-header__logo-link">
-        <div class="page-header__title">Сервисный центр 24 часа</div>
-        <div class="page-header__title-info">Ремонт и обслуживание винных шкафов</div>
-      </a>
       <div class="page-header__menu-wrapper">
+        <a class="page-header__logo-link">
+          <div class="page-header__title">Сервисный центр 24 часа</div>
+          <div class="page-header__title-info">Ремонт и обслуживание винных шкафов</div>
+        </a>
+        <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span class="page-header__close-toggle"></span></button>
+      </div>
+      <div class="page-header__container">
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -170,10 +175,6 @@
             <tr>
               <td class="price-list__work-type">Установка или ремонт испарителя</td>
               <td class="price-list__price">от 0 руб.</td>
-            </tr>
-            <tr>
-              <td class="price-list__work-type">Выезд мастера на объект</td>
-              <td class="price-list__price">от 3200 руб.</td>
             </tr>
             <tr>
               <td class="price-list__work-type">Замена сенсорных датчиков</td>

@@ -57,8 +57,8 @@
 }
 
 .promotion__button:hover {
-  color: $red;
-  border-color: $red;
+  color: $red-hover;
+  border-color: $red-hover;
 }
 
 .promotion__button:active {
@@ -66,10 +66,37 @@
 }
 
 .promotion__text {
+  font-family: "Roboto", "Arial", sans-serif;
   margin: 0;
   letter-spacing: 0.05em;
+  line-height: 19px;
+}
+
+.promotion__text:first-of-type {
+  margin-bottom: 5px;
 }
 
 .promotion__text:nth-of-type(2) {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .promotion__title-first-part {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .promotion__title-second-part {
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 26px;
+  }
+
+  .promotion__wrapper {
+    padding: 126px 17px 167px 18px;
+  }
+
+  .promotion__text {
+    display: none;
+  }
 }

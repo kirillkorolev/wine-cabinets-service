@@ -4,6 +4,8 @@
   var accordionToggles = document.querySelectorAll(
       '.js-questions-accordion-toggle'
   );
+  var pageHeader = document.querySelector('.page-header');
+  var headerToggle = document.querySelector('.js-page-header-toggle');
 
   var changeAccordionHeight = function (button) {
     button.addEventListener('click', function () {
@@ -19,5 +21,15 @@
 
   accordionToggles.forEach(function (toggle) {
     changeAccordionHeight(toggle);
+  });
+
+  headerToggle.addEventListener('click', function () {
+    if (pageHeader.classList.contains('page-header--menu-closed')) {
+      pageHeader.classList.remove('page-header--menu-closed');
+      pageHeader.classList.add('page-header--menu-opened');
+    } else {
+      pageHeader.classList.add('page-header--menu-closed');
+      pageHeader.classList.remove('page-header--menu-opened');
+    }
   });
 })();

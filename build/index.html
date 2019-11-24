@@ -10,6 +10,8 @@
   <link rel="preload" href="fonts/roboto-condensed-regular.woff" as="font">
   <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font">
   <link rel="preload" href="fonts/roboto-condensed-bold.woff" as="font">
+  <link rel="preload" href="fonts/roboto-black.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-black.woff" as="font">
   <script src="./js/plugins/picturefill.min.js" async=""></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -24,13 +26,16 @@
 <path d="M24.0023 18.8175C21.1445 18.8175 18.8232 21.1388 18.8232 23.9966C18.8232 26.8543 21.1445 29.1756 24.0023 29.1756C26.86 29.1756 29.1813 26.8543 29.1813 23.9966C29.1813 21.1388 26.86 18.8175 24.0023 18.8175ZM24.0023 27.8219C21.8916 27.8219 20.1769 26.1073 20.1769 23.9966C20.1769 21.8858 21.8916 20.1712 24.0023 20.1712C26.113 20.1712 27.8276 21.8858 27.8276 23.9966C27.8276 26.1073 26.113 27.8219 24.0023 27.8219Z" fill="#8C0014"></path>
 </symbol></svg>
   </div>
-  <header class="page-header">
+  <header class="page-header page-header--menu-closed ">
     <div class="page-header__wrapper">
-      <a class="page-header__logo-link">
-        <div class="page-header__title">Сервисный центр 24 часа</div>
-        <div class="page-header__title-info">Ремонт и обслуживание винных шкафов</div>
-      </a>
       <div class="page-header__menu-wrapper">
+        <a class="page-header__logo-link">
+          <div class="page-header__title">Сервисный центр 24 часа</div>
+          <div class="page-header__title-info">Ремонт и обслуживание винных шкафов</div>
+        </a>
+        <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span class="page-header__close-toggle"></span></button>
+      </div>
+      <div class="page-header__container">
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -177,10 +182,6 @@
             <tr>
               <td class="price-list__work-type">Установка или ремонт испарителя</td>
               <td class="price-list__price">от 0 руб.</td>
-            </tr>
-            <tr>
-              <td class="price-list__work-type">Выезд мастера на объект</td>
-              <td class="price-list__price">от 3200 руб.</td>
             </tr>
             <tr>
               <td class="price-list__work-type">Замена сенсорных датчиков</td>

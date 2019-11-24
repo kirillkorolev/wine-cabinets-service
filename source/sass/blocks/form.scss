@@ -37,6 +37,16 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 19px;
+  outline: none;
+}
+
+.form__button:hover {
+  background-color: $red-hover;
+}
+
+.form__button:active {
+  background-color: $red;
+  opacity: 0.7;
 }
 
 .form__input {

@@ -3,6 +3,7 @@
 
   max-width: 749px;
   width: auto;
+  margin-right: 15px;
 }
 
 .advantages__title {
@@ -20,7 +21,7 @@
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.05em;
-  margin: 0;
+  margin: 0 0 11px;
 }
 
 .advantages__text {
@@ -46,7 +47,7 @@
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .advantages__form {
@@ -56,7 +57,8 @@
   border-radius: 4px;
   padding: 42px 35px 47px 32px;
   background-color: $white;
-  margin-top: -150px;
+  margin: -160px 0 40px;
+  height: 453px;
 }
 
 .advantages__form-title,
@@ -69,7 +71,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  margin: 0;
+  margin: 0 0 4px 0;
 }
 
 .advantages__form-slogan {
@@ -83,8 +85,23 @@
 }
 
 .advantages__container {
-  max-width: 1130px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px 0 45px;
+}
+
+@media (max-width: 767px) {
+  .advantages__wrapper {
+    flex-direction: column;
+  }
+
+  .advantages__list {
+    margin-right: 0;
+  }
+
+  .advantages__form {
+    margin: 0;
+    order: -1;
+  }
 }

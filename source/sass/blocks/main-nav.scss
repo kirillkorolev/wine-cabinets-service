@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 471px;
-  padding-right: 10px;
+  width: 470px;
+  margin-right: 10px;
 }
 
 .main-nav__link {
@@ -13,10 +13,11 @@
   font-size: 14px;
   line-height: 16px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
 }
 
 .main-nav__link:hover {
-  color: $red;
+  color: $red-hover;
 }
 
 .main-nav__link:active {

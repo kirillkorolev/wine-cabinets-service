@@ -24,3 +24,12 @@
   display: block;
   height: 105px;
 }
+
+.partners__link:hover {
+  filter: grayscale(100%);
+}
+
+.partners__link:active {
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
