@@ -14,7 +14,8 @@
   text-align: center;
 }
 
-.price-list th {
+.price-list__breakage-type,
+.price-list__ammount {
   background-color: $red;
   color: $white;
   letter-spacing: 0.05em;
@@ -29,7 +30,6 @@
 }
 
 .price-list__ammount {
-  //max-width: 276px;
   width: 28.45%;
 }
 
@@ -100,3 +100,47 @@
   border-bottom: 1px solid $table-border-grey;
   border-top: 1px solid $table-border-grey;
 }
+
+@media (max-width: 767px) {
+  .price-list__title {
+    font-size: 21px;
+    line-height: 27px;
+    margin-bottom: 29px;
+  }
+
+  .price-list {
+    padding: 38px 4.69% 41px;
+  }
+
+  .price-list__button {
+    transform: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .price-list th {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 9px 15px;
+  }
+
+  .price-list__price,
+  .price-list__work-type {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .price-list__work-type {
+    padding: 12px 5px 10px 15px;
+
+  }
+
+  .price-list__breakage-type {
+    width: 73.44%;
+  }
+
+  .price-list__ammount {
+    width: 26.55%;
+  }
+}
+

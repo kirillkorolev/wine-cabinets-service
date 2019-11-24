@@ -67,3 +67,24 @@
   padding: 12px 13px;
   resize: none;
 }
+
+@media (max-width: 767px) {
+  .form-call-order__input,
+  .form-call-order textarea,
+  .form-call-order__button {
+    width: 100%;
+    min-width: 259px;
+  }
+
+  .form-call-order__input {
+    padding: 12px 11px 11px;
+  }
+
+  .form-call-order textarea {
+    padding: 14px 11px;
+  }
+
+  .form-call-order__item:last-of-type {
+    margin-bottom: 21px;
+  }
+}

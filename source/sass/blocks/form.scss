@@ -150,3 +150,25 @@
   top: -5px;
   left: -12px;
 }
+
+@media (max-width: 767px) {
+  .form__wrapper {
+    padding: 37px 4.68% 25px;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+
+  .form__upper-wrapper {
+    flex-direction: column;
+  }
+
+  .form__upper-wrapper .form__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .form__button {
+    width: 100%;
+  }
+}

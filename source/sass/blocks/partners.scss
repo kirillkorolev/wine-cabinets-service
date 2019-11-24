@@ -33,3 +33,38 @@
   filter: grayscale(100%);
   opacity: 0.7;
 }
+
+.partners {
+  padding-bottom: 46px;
+}
+
+@media (max-width: 767px) {
+  .partners__title {
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .partners {
+    padding: 38px 4.68% 41px;
+  }
+
+  .partners__logo {
+    width: 97px;
+    height: 59px;
+    filter: grayscale(100%);
+  }
+
+  .partners__item .partners__logo:hover {
+    filter: none;
+  }
+
+  .partners__link {
+    height: 59px;
+  }
+
+  .partners__wrapper {
+    padding: 0;
+  }
+}

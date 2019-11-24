@@ -10,9 +10,10 @@
 
 .questions {
   background-color: $grey;
+  padding: 46px 15px 50px;
 }
 
-.question__ask-button {
+.questions__ask-button {
   color: $white;
   background-color: $red;
   display: inline-block;
@@ -27,7 +28,6 @@
   text-align: center;
   letter-spacing: 0.05em;
   padding: 13px 10px 11px;
-  margin-bottom: 50px;
   border: none;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -35,11 +35,11 @@
   outline: none;
 }
 
-.question__ask-button:hover {
+.questions__ask-button:hover {
   background-color: $red-hover;
 }
 
-.question__ask-button:active {
+.questions__ask-button:active {
   background-color: $red;
   opacity: 0.7;
 }
@@ -108,4 +108,21 @@
   width: 100%;
   border-top: 1px solid $black;
   padding: 8px 0 33px;
+}
+
+@media (max-width: 767px) {
+  .questions__ask-button {
+    margin: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .questions__title {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .questions {
+    padding: 38px 4.68% 41px;
+  }
 }

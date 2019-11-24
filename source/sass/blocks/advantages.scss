@@ -91,17 +91,68 @@
   padding: 0 15px 0 45px;
 }
 
+.advantages__mob-title {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .advantages__wrapper {
     flex-direction: column;
+    position: relative;
   }
 
   .advantages__list {
     margin-right: 0;
+    order: 1;
+  }
+
+  .advantages__container {
+    padding: 0 4.68% 34px 5%;
   }
 
   .advantages__form {
     margin: 0;
     order: -1;
+    max-width: 100%;
+    padding: 27px 5.19% 32px;
+    position: absolute;
+    top: -98px;
+    right: 0;
+    height: auto;
+  }
+
+  .advantages__title {
+    display: none;
+  }
+
+  .advantages__guarantee-icon {
+    margin-right: 15px;
+  }
+
+  .advantages__mob-title {
+    display: block;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    order: 0;
+    margin-top: 376px;
+    margin-bottom: 28px;
+  }
+
+  .advantages__form-slogan {
+    font-size: 15px;
+    margin-bottom: 23px;
+  }
+
+  .advantages__guarantee-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .advantages__item:not(:last-child) {
+    margin-bottom: 19px;
   }
 }

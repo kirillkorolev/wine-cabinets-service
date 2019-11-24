@@ -1,0 +1,26 @@
+.reviews__title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  margin-top: 0;
+  margin-bottom: 31px;
+}
+
+.reviews {
+  padding: 45px 0 36px;
+  background-repeat: no-repeat;
+  background-color: $yellow;
+  background-image: url("../img/backgrounds/reviews-desktop-bg@1x.jpg");
+  background-size: cover;
+  background-position: center 0;
+  margin-bottom: 51px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/backgrounds/reviews-desktop-bg@2x.jpg");
+  }
+}

@@ -83,20 +83,30 @@
 @media (max-width: 767px) {
   .promotion__title-first-part {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 9px;
+    margin-bottom: 15px;
   }
 
   .promotion__title-second-part {
     font-size: 32px;
     line-height: 37px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .promotion__wrapper {
-    padding: 126px 17px 167px 18px;
+    padding: 130px 17px 167px 18px;
   }
 
   .promotion__text {
     display: none;
+  }
+
+  .promotion {
+    margin-bottom: 0;
+    background-image: url("../img/backgrounds/promotion-mobile-bg@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/promotion-mobile-bg@2x.jpg");
+    }
   }
 }

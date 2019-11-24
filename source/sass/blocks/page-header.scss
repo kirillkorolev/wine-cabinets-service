@@ -134,6 +134,8 @@
   }
 
   .page-header {
+    max-width: 767px;
+
     &--menu-closed {
       .page-header__container {
         display: none;

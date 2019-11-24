@@ -12,6 +12,8 @@
   <link rel="preload" href="fonts/roboto-condensed-bold.woff" as="font">
   <link rel="preload" href="fonts/roboto-black.woff2" as="font">
   <link rel="preload" href="fonts/roboto-black.woff" as="font">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-regular.woff" as="font">
   <script src="./js/plugins/picturefill.min.js" async=""></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -117,13 +119,14 @@
               </div>
             </li>
           </ul>
+          <div class="advantages__mob-title">Почему мы?</div>
           <div class="advantages__form">
             <h3 class="advantages__form-title">Хотите узнать причину поломки?</h3>
             <div class="advantages__form-slogan">Закажите бесплатную диагностику!</div>
             <form class="form-call-order">
               <fieldset class="form-call-order__item">
-                <label class="visually-hidden" for="name">Имя</label>
-                <input class="form-call-order__input" id="name" type="text" placeholder="Имя" minlength="3" required="">
+                <label class="visually-hidden" for="name">Ваше имя</label>
+                <input class="form-call-order__input" id="name" type="text" placeholder="Ваше имя" minlength="3" required="">
               </fieldset>
               <fieldset class="form-call-order__item">
                 <label class="visually-hidden" for="phone">Телефонный номер</label>
@@ -206,56 +209,109 @@
     </section>
 
     <section class="reviews">
-
       <h2 class="reviews__title">Отзывы наших клиентов</h2>
+      <div class="slider">
+        <div class="item">
+          <img src="img/slide1.jpg" alt="Первый слайд">
+          <div class="slideText">Заголовок слайда 1</div>
+        </div>
+        <div class="item">
+          <img src="img/slide2.jpg" alt="Второй слайд">
+          <div class="slideText">Заголовок слайда 2</div>
+        </div>
+        <div class="item">
+          <img src="img/slide3.jpg" alt="Третий слайд">
+          <div class="slideText">Заголовок слайда 3</div>
+        </div>
+      </div>
+      <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+      </div>
     </section>
     <section class="partners">
       <div class="partners__wrapper">
         <h2 class="partners__title">Бренды с которыми работаем</h2>
         <ul class="partners__list">
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-1.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-2.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-3.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-4.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-5.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-6.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-7.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-8.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
-          <li class="parteners__item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__logo" src="img/logos/partner-9.png" width="147" heigth="105" alt="логотип фирмы партнера">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="img/logos/partner-10.png" width="147" heigth="105" alt="логотип фирмы партнера">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="img/logos/partner-11.png" width="147" heigth="105" alt="логотип фирмы партнера">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="img/logos/partner-12.png" width="147" heigth="105" alt="логотип фирмы партнера">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="img/logos/partner-13.png" width="147" heigth="105" alt="логотип фирмы партнера">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="img/logos/partner-14.png" width="147" heigth="105" alt="логотип фирмы партнера">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="img/logos/partner-15.png" width="147" heigth="105" alt="логотип фирмы партнера">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__logo" src="img/logos/partner-16.png" width="147" heigth="105" alt="логотип фирмы партнера">
             </a>
           </li>
         </ul>
@@ -310,7 +366,7 @@
           </div>
         </li>
       </ul>
-      <button class="question__ask-button" type="button">Задать вопрос</button>
+      <button class="questions__ask-button" type="button">Задать вопрос</button>
     </section>
     <section class="form">
       <div class="form__wrapper">
@@ -373,9 +429,7 @@
           <div class="contacts__time">Без выходных. С 8.00 и до последнего клиента</div>
         </div>
       </div>
-
     </section>
-
   </main>
   <footer class="page-footer">
     <div class="page-footer__wraper">
