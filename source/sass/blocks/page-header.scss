@@ -183,7 +183,7 @@
 
       .page-header__wrapper {
         position: absolute;
-        background-image: linear-gradient(163.84deg,#0f3308 -68.98%,#071409 75.12%,#141a0d 132.97%);
+        background-image: linear-gradient(163.84deg, #0f3308 -68.98%, #071409 75.12%, #141a0d 132.97%);
         height: 100vh;
         align-items: normal;
         flex-direction: column;
@@ -203,15 +203,12 @@
 
       .page-header__call-block {
         max-width: 100%;
+        padding-top: 20px;
       }
 
       .main-nav__item {
         padding: 22px 0;
         border-bottom: 1px solid $border-grey;
-      }
-
-      .page-header__call-block {
-        padding-top: 20px;
       }
     }
   }

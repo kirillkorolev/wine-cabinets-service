@@ -18,6 +18,11 @@
   color: $black;
 }
 
+.form-call-order__input:hover,
+.form-call-order textarea:hover {
+  border-color: $black;
+}
+
 .form-call-order__input::placeholder,
 .form-call-order textarea::placeholder {
   font-size: 14px;

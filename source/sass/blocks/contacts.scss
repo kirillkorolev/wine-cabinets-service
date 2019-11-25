@@ -10,19 +10,19 @@
 .contacts__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   &--phone {
     margin-right: 7.35%;
   }
 
   &--address {
-    max-width: 325px;
+    max-width: 331px;
     margin-right: 4.44%;
   }
 
   &--mail {
-    margin-right: 7.52%;
+    margin-right: 7.1%;
   }
 
   &--working-time {
@@ -46,7 +46,7 @@
   font-weight: 700;
   color: $black;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 26px;
   letter-spacing: 0.05em;
   font-style: normal;
 }

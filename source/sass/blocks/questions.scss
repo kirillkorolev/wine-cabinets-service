@@ -1,5 +1,5 @@
 .questions__title {
-  margin: 0 0 29px;
+  margin: 0 0 23px;
   text-align: center;
   font-weight: 700;
   font-size: 22px;
@@ -10,7 +10,7 @@
 
 .questions {
   background-color: $grey;
-  padding: 46px 15px 50px;
+  padding: 50px 15px 50px;
 }
 
 .questions__ask-button {
@@ -48,11 +48,10 @@
   @include reset-list;
   max-width: 970px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   background-color: $white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  margin-bottom: 35px;
 }
 
 .questions__number {
@@ -75,7 +74,7 @@
 .questions__button {
   display: flex;
   align-items: center;
-  padding: 15px 30px;
+  padding: 14px 30px;
   border: none;
   background-color: transparent;
   width: 100%;
@@ -85,6 +84,7 @@
 
   &--active {
     color: $red;
+    padding-bottom: 0;
   }
 }
 
@@ -107,7 +107,7 @@
   max-width: 782px;
   width: 100%;
   border-top: 1px solid $black;
-  padding: 8px 0 33px;
+  padding: 10px 0 33px;
 }
 
 @media (max-width: 767px) {
