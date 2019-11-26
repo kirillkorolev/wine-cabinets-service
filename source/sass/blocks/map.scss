@@ -2,6 +2,7 @@
   width: 100%;
   object-fit: cover;
   display: block;
+  height: 100%;
 }
 
 .map iframe {
@@ -29,4 +30,20 @@
   top: 40%;
   left: 50%;
   z-index: 20;
+}
+
+@media (max-width: 767px) {
+  .map {
+    height: 292px;
+    margin-bottom: 30px;
+  }
+
+  .map::before {
+    top: 53%;
+    left: 56%;
+  }
+
+  .map iframe {
+    height: 292px;
+  }
 }

@@ -104,3 +104,54 @@
   right: -3px;
   background-position: 0 0, 11px 0;
 }
+
+@media (max-width: 767px) {
+  .reviews {
+    padding-top: 39px;
+    margin-bottom: 0;
+    background-image: url("../img/backgrounds/reviews-mobile-bg@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/reviews-mobile-bg@2x.jpg");
+    }
+  }
+
+  .reviews__title {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  .reviews__text {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 0 9% 12px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .reviews__slider-wrapper::before {
+    background-image: url("../img/icons/icon-up-backtick-mobile.svg"), url("../img/icons/icon-up-backtick-mobile.svg");
+    width: 20px;
+    height: 16px;
+    top: 6px;
+    left: 14px;
+  }
+
+  .reviews__slider-wrapper::after {
+    background-image: url("../img/icons/icon-down-backtick-mobile.svg"), url("../img/icons/icon-down-backtick-mobile.svg");
+    width: 20px;
+    height: 16px;
+    bottom: 32px;
+    right: 14px;
+  }
+
+  .reviews__numbers {
+    display: none;
+  }
+}

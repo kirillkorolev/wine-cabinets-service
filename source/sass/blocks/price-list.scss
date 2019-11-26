@@ -118,27 +118,34 @@
     width: 100%;
   }
 
-  .price-list th {
-    font-size: 16px;
-    line-height: 19px;
-    padding: 9px 15px;
-  }
-
   .price-list__price,
   .price-list__work-type {
     font-size: 14px;
     line-height: 18px;
   }
 
-  .price-list__work-type {
-    padding: 12px 5px 10px 15px;
+  .price-list__breakage-type {
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 12px;
   }
 
-  .price-list__breakage-type {
-    width: 73.44%;
+  .price-list__work-type {
+    padding: 7px 4px 8px 15px;
+  }
+
+  .price-list__price {
+    padding-left: 8px;
+    padding-right: 5px;
   }
 
   .price-list__ammount {
-    width: 26.55%;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 0;
+    padding-top: 8px;
+    padding-bottom: 12px;
   }
 }

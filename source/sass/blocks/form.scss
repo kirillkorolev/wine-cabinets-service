@@ -134,7 +134,7 @@
   border-radius: 2px;
   border: 1px solid $border-grey;
   background-color: $white;
-  top: -6px;
+  top: -7px;
   left: -14px;
 }
 
@@ -146,8 +146,20 @@
   background-position: 0 0;
   width: 8px;
   height: 9px;
-  top: -5px;
+  top: -6px;
   left: -12px;
+}
+
+.form__checkbox-label:hover {
+  cursor: pointer;
+}
+
+.form__checkbox-label:hover::before {
+  border-color: $black;
+}
+
+.form__checkbox-label:active {
+  opacity: 0.7;
 }
 
 @media (max-width: 767px) {
@@ -169,5 +181,35 @@
 
   .form__button {
     width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .form__title {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 35px;
+  }
+
+  .form__lower-wrapper textarea {
+    height: 108px;
+  }
+
+  .form__confirmation {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .form__confirmation-text {
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 18px;
+  }
+
+  .form__checkbox-label::before {
+    left: 1px;
+  }
+
+  .form__checkbox:checked + label::after {
+    left: 3px;
   }
 }

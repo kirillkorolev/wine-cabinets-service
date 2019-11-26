@@ -120,9 +120,43 @@
   .questions__title {
     font-size: 21px;
     line-height: 25px;
+    margin-bottom: 34px;
   }
 
   .questions {
     padding: 38px 4.68% 41px;
+  }
+
+  .questions__number {
+    font-size: 22px;
+    line-height: 26px;
+    margin-right: 6px;
+  }
+
+  .questions__accordion-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .questions__button {
+    padding: 18px 14px 15px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .questions__text-wrapper {
+    margin-left: 44px;
+    margin-right: 7px;
+  }
+
+  .questions__text {
+    font-size: 14px;
+    line-height: 20px;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .questions__list {
+    margin-bottom: 26px;
   }
 }

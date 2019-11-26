@@ -62,3 +62,31 @@
   text-shadow: none;
   opacity: 0.7;
 }
+
+@media (max-width: 767px) {
+  .contacts__item {
+    margin-bottom: 21px;
+
+    &--phone {
+      margin-right: 8.7%;
+    }
+
+    &--address {
+      margin-right: 0;
+    }
+  }
+
+  .contacts__address,
+  .contacts__mail,
+  .contacts__phone {
+    line-height: 25px;
+  }
+
+  .contacts__time {
+    line-height: 28px;
+  }
+
+  .contacts__item:last-of-type {
+    margin-bottom: 26px;
+  }
+}
